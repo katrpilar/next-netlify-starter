@@ -64,10 +64,10 @@ render() {
   return (
     <Html lang={this.props.lang || "en"}>
       <Head>
-        
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
       </Head>
       <body>
-      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <amp-analytics type="gtag" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
