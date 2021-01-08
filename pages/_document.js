@@ -64,20 +64,16 @@ render() {
   return (
     <Html lang={this.props.lang || "en"}>
       <Head>
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `[google analytics tracking code here]`
-          }}
-        /> */}
-        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        
+      </Head>
+      <body>
+      <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <amp-analytics type="gtag" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
   __html: `${configObj}`}}
 />
 </amp-analytics>
-      </Head>
-      <body>
         <Main />
         <NextScript />
       </body>
