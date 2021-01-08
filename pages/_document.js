@@ -88,7 +88,7 @@ render() {
 
       </Head>
       <body>
-<amp-analytics type="gtag" data-credentials="include">
+<amp-analytics type="googleanalytics" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
   __html: `${configObj}`}}
