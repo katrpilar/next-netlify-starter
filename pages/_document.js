@@ -1,7 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
+// "gtag_id": "UA-186911794-1",
+
 let configObj = {
   "vars" : {
-    "gtag_id": "UA-186911794-1",
+    "account": "UA-186911794-1",
     "config" : {
       "UA-186911794-1": { "groups": "default" }
     }
