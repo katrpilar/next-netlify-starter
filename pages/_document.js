@@ -91,7 +91,7 @@ render() {
 <amp-analytics type="googleanalytics" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
-  __html: `${configObj}`}}
+  __html: `${JSON.stringify(configObj)}`}}
 />
 </amp-analytics>
         <Main />
