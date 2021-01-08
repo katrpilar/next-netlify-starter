@@ -95,7 +95,7 @@ render() {
 dangerouslySetInnerHTML={{
   __html: `${configObj}`}}
 /> */}
-<script type="application/json">{configObj}</script>
+<script type="application/json">{JSON.stringify(configObj)}</script>
 </amp-analytics>
         <Main />
         <NextScript />
