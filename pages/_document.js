@@ -91,12 +91,7 @@ render() {
 
       </Head>
       <body>
-<amp-analytics type="gtag" data-credentials="include">
-<script type="application/json"
-dangerouslySetInnerHTML={{
-  __html: JSON.stringify(configObj)}}
-/>
-</amp-analytics>
+
         <Main />
         <NextScript />
       </body>

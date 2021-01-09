@@ -4,13 +4,49 @@ import { useAmp } from 'next/amp'
 function MyAmpPage() {
   const date = new Date()
   const isAmp = useAmp()
-
+  let configObj = {
+    "vars" : {
+      "gtag_id": "G-G6S490GS84",
+      "config" : {
+        "G-G6S490GS84": { "groups": "default" }
+      }
+    },
+    "triggers": {
+      "productView": {
+        "selector": "#customAmp",
+        "on": "visible",
+        "request": "event",
+        "vars": {
+              "event_name": "view_item",
+              "event_category": "engagement",
+              "event_label": "",
+              "value": "",
+              "method": "Google"
+            },
+        "extraUrlParams": {
+          "pr1id": "322144",
+          "pr1nm": "azyka.com",
+          "pr1pr": "1995",
+          "pr1va": "Com",
+          "pr1br": "Invented",
+          "pr1qt": 1,
+          "pr1ps": 1,
+          "pr1ca": "industries/dating-relationship-business-names"
+        }
+      }
+    }
+  };
 
   return (
     <div id="customAmp">
        {isAmp ? (
          <>
-         
+         <amp-analytics type="gtag" data-credentials="include">
+<script type="application/json"
+dangerouslySetInnerHTML={{
+  __html: JSON.stringify(configObj)}}
+/>
+</amp-analytics>
          <amp-timeago
         width="0"
         height="15"
