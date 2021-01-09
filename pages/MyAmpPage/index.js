@@ -6,9 +6,9 @@ function MyAmpPage() {
   const isAmp = useAmp()
   let configObj = {
     "vars" : {
-      "gtag_id": "G-G6S490GS84",
+      "gtag_id": "UA-186911794-1",
       "config" : {
-        "G-G6S490GS84": { "groups": "default" }
+        "UA-186911794-1": { "groups": "default" }
       }
     },
     "triggers": {
