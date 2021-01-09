@@ -24,6 +24,7 @@ function MyAmpPage() {
               "method": "Google"
             },
         "extraUrlParams": {
+          "ni": 1,
           "pr1id": "322144",
           "pr1nm": "azyka.com",
           "pr1pr": "1995",
