@@ -7,9 +7,8 @@ let configObj = {
     }
   },
   "triggers": {
-    "pageview": {
+    "productView": {
       "selector": "#customAmp",
-
       "on": "visible",
       "request": "event",
       "vars": {
@@ -95,7 +94,7 @@ render() {
 <amp-analytics type="gtag" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
-  __html: `${JSON.stringify(configObj)}`}}
+  __html: `${JconfigObj}`}}
 />
 </amp-analytics>
         <Main />
