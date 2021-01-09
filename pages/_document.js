@@ -93,9 +93,8 @@ render() {
 <amp-analytics type="gtag" data-credentials="include">
 <script type="application/json"
 dangerouslySetInnerHTML={{
-  __html: JSON.stringify(configObj)}}
+  __html: `${JSON.stringify(configObj)}`}}
 />
-{/* <script type="application/json">{JSON.stringifyconfigObj}</script> */}
 </amp-analytics>
         <Main />
         <NextScript />
@@ -106,7 +105,7 @@ dangerouslySetInnerHTML={{
 
 }
 
-// export default MyDocument
+export default MyDocument
 
 // import Document, { Html, Head, Main, NextScript } from "next/document"
 // // "gtag_id": "UA-186911794-1",
