@@ -8,6 +8,8 @@ let configObj = {
   },
   "triggers": {
     "pageview": {
+      "selector": "#customAmp",
+
       "on": "visible",
       "request": "event",
       "vars": {
