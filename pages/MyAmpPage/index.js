@@ -34,6 +34,18 @@ function MyAmpPage() {
           "pr1ps": 1,
           "pr1ca": "industries/dating-relationship-business-names"
         }
+      },
+      "testView": {
+        "selector": "#customAmp",
+        "on": "visible",
+        "request": "event",
+        "vars": {
+              "event_name": "ename",
+              "event_category": "ecategory",
+              "event_label": "elabel",
+              "value": "0",
+              "method": "Google"
+            }
       }
     }
   };
