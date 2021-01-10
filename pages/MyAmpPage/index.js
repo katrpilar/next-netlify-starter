@@ -4,6 +4,28 @@ import { useAmp } from 'next/amp'
 function MyAmpPage() {
   const date = new Date()
   const isAmp = useAmp()
+  // "productView": {
+  //   "selector": "#customAmp",
+  //   "on": "visible",
+  //   "request": "event",
+  //   "vars": {
+  //         "event_name": "view_item",
+  //         "event_category": "engagement",
+  //         "event_label": "",
+  //         "value": "",
+  //         "method": "Google"
+  //       },
+  //   "extraUrlParams": {
+  //     "pr1id": "322144",
+  //     "pr1nm": "azyka.com",
+  //     "pr1pr": "1995",
+  //     "pr1va": "Com",
+  //     "pr1br": "Invented",
+  //     "pr1qt": 1,
+  //     "pr1ps": 1,
+  //     "pr1ca": "industries/dating-relationship-business-names"
+  //   }
+  // },
   let configObj = {
     "vars" : {
       "gtag_id": "UA-186911794-1",
@@ -12,28 +34,6 @@ function MyAmpPage() {
       }
     },
     "triggers": {
-      "productView": {
-        "selector": "#customAmp",
-        "on": "visible",
-        "request": "event",
-        "vars": {
-              "event_name": "view_item",
-              "event_category": "engagement",
-              "event_label": "",
-              "value": "",
-              "method": "Google"
-            },
-        "extraUrlParams": {
-          "pr1id": "322144",
-          "pr1nm": "azyka.com",
-          "pr1pr": "1995",
-          "pr1va": "Com",
-          "pr1br": "Invented",
-          "pr1qt": 1,
-          "pr1ps": 1,
-          "pr1ca": "industries/dating-relationship-business-names"
-        }
-      },
       "testView": {
         "selector": "#customAmp",
         "on": "visible",
@@ -45,6 +45,23 @@ function MyAmpPage() {
               "value": "0",
               "method": "Google"
             }
+      }
+    },
+    "productView": {
+      "selector": "#customAmp",
+      "on": "visible",
+      "request": "event",
+      "extraUrlParams": {
+        "ec": "engagement",
+        "ea": "view_item",
+        "pr1id": "322144",
+        "pr1nm": "azyka.com",
+        "pr1pr": "1995",
+        "pr1va": "Com",
+        "pr1br": "Invented",
+        "pr1qt": 1,
+        "pr1ps": 1,
+        "pr1ca": "industries/dating-relationship-business-names"
       }
     }
   };
