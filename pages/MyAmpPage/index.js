@@ -24,6 +24,31 @@ function MyAmpPage() {
   //     "pr1ca": "industries/dating-relationship-business-names"
   //   }
   // },
+
+
+
+  // PREV PRODUCT LIST VIEW
+  // "productListView": {
+  //   "selector": "#customAmp",
+  //   "on": "visible",
+  //   "request": "event",
+  //   "vars": {
+  //         "event_name": "view_item_list",
+  //         "event_category": "engagement",
+  //         "value": "0",
+  //         "method": "Google"
+  //       },
+  //   "extraUrlParams": {
+  //     "il1pi1id": "80539",
+  //     "il1pi1nm": "kaalm.com",
+  //     "il1pi1pr": "1225",
+  //     "il1pi1va": "Com",
+  //     "il1pi1br": "Invented",
+  //     "il1pi1qt": 1,
+  //     "il1pi1ps": 1,
+  //     "il1pi1ca": "industries/organization-company-names"
+  //   }
+  // }
   let configObj = {
     "vars" : {
       "gtag_id": "UA-186911794-1",
@@ -75,14 +100,30 @@ function MyAmpPage() {
               "method": "Google"
             },
         "extraUrlParams": {
-          "il1pi1id": "80539",
-          "il1pi1nm": "kaalm.com",
-          "il1pi1pr": "1225",
-          "il1pi1va": "Com",
-          "il1pi1br": "Invented",
-          "il1pi1qt": 1,
-          "il1pi1ps": 1,
-          "il1pi1ca": "industries/organization-company-names"
+          "items": [
+            {
+              "id": "P12345",
+              "name": "Android Warhol T-Shirt",
+              "list_name": "Search Results",
+              "brand": "Google",
+              "category": "Apparel/T-Shirts",
+              "variant": "Black",
+              "list_position": 1,
+              "quantity": 2,
+              "price": 2
+            },
+            {
+              "id": "P67890",
+              "name": "Flame challenge TShirt",
+              "list_name": "Search Results",
+              "brand": "MyBrand",
+              "category": "Apparel/T-Shirts",
+              "variant": "Red",
+              "list_position": 2,
+              "quantity": 1,
+              "price": 3
+            }
+          ]
         }
       }
     }
