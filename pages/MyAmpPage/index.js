@@ -96,8 +96,6 @@ function MyAmpPage() {
         "vars": {
               "event_name": "view_item_list",
               "event_category": "engagement",
-              "value": "0",
-              "method": "Google",
               "items": [
                 {
                   "id": "P12345",
