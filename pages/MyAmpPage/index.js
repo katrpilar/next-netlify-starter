@@ -45,44 +45,45 @@ function MyAmpPage() {
               "value": "0",
               "method": "Google"
             }
-      }
-    },
-    "productView": {
-      "selector": "#customAmp",
-      "on": "visible",
-      "request": "event",
-      "extraUrlParams": {
-        "ec": "engagement",
-        "ea": "view_item",
-        "pr1id": "322144",
-        "pr1nm": "azyka.com",
-        "pr1pr": "1995",
-        "pr1va": "Com",
-        "pr1br": "Invented",
-        "pr1qt": 1,
-        "pr1ps": 1,
-        "pr1ca": "industries/dating-relationship-business-names"
-      }
-    },
-    "productListView": {
-      "selector": "#customAmp",
-      "on": "visible",
-      "request": "event",
-      "vars": {
-            "event_name": "view_item_list",
-            "event_category": "engagement",
-            "value": "0",
-            "method": "Google"
-          },
-      "extraUrlParams": {
-        "il1pi1id": "80539",
-        "il1pi1nm": "kaalm.com",
-        "il1pi1pr": "1225",
-        "il1pi1va": "Com",
-        "il1pi1br": "Invented",
-        "il1pi1qt": 1,
-        "il1pi1ps": 1,
-        "il1pi1ca": "industries/organization-company-names"
+      },
+      "productView": {
+        "selector": "#customAmp",
+        "on": "visible",
+        "request": "event",
+        "extraUrlParams": {
+          "ec": "engagement",
+          "ea": "view_item",
+          "pr1id": "322144",
+          "pr1nm": "azyka.com",
+          "pr1pr": "1995",
+          "pr1va": "Com",
+          "pr1br": "Invented",
+          "pr1qt": 1,
+          "pr1ps": 1,
+          "pr1ca": "industries/dating-relationship-business-names"
+        }
+      },
+      "productListView": {
+        "selector": "#customAmp",
+        "on": "visible",
+        "request": "event",
+        "vars": {
+              "event_name": "view_item_list",
+              "event_category": "engagement",
+              "event_label": "elabel",
+              "value": "0",
+              "method": "Google"
+            },
+        "extraUrlParams": {
+          "il1pi1id": "80539",
+          "il1pi1nm": "kaalm.com",
+          "il1pi1pr": "1225",
+          "il1pi1va": "Com",
+          "il1pi1br": "Invented",
+          "il1pi1qt": 1,
+          "il1pi1ps": 1,
+          "il1pi1ca": "industries/organization-company-names"
+        }
       }
     }
   };
