@@ -4,18 +4,16 @@ import { useAmp } from 'next/amp'
 function MyAmpPage() {
   const date = new Date()
   const isAmp = useAmp()
+
+
+
   // "productView": {
   //   "selector": "#customAmp",
   //   "on": "visible",
   //   "request": "event",
-  //   "vars": {
-  //         "event_name": "view_item",
-  //         "event_category": "engagement",
-  //         "event_label": "",
-  //         "value": "",
-  //         "method": "Google"
-  //       },
   //   "extraUrlParams": {
+  //     "ec": "engagement",
+  //     "ea": "view_item",
   //     "pr1id": "322144",
   //     "pr1nm": "azyka.com",
   //     "pr1pr": "1995",
@@ -50,9 +48,12 @@ function MyAmpPage() {
         "selector": "#customAmp",
         "on": "visible",
         "request": "event",
+        "vars": {
+              "event_name": "view_item",
+              "event_category": "engagement",
+              "method": "Google"
+            },
         "extraUrlParams": {
-          "ec": "engagement",
-          "ea": "view_item",
           "pr1id": "322144",
           "pr1nm": "azyka.com",
           "pr1pr": "1995",
@@ -70,7 +71,6 @@ function MyAmpPage() {
         "vars": {
               "event_name": "view_item_list",
               "event_category": "engagement",
-              "event_label": "elabel",
               "value": "0",
               "method": "Google"
             },
