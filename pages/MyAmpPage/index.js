@@ -63,6 +63,27 @@ function MyAmpPage() {
         "pr1ps": 1,
         "pr1ca": "industries/dating-relationship-business-names"
       }
+    },
+    "productListView": {
+      "selector": "#customAmp",
+      "on": "visible",
+      "request": "event",
+      "vars": {
+            "event_name": "view_item_list",
+            "event_category": "engagement",
+            "value": "0",
+            "method": "Google"
+          },
+      "extraUrlParams": {
+        "il1pi1id": "80539",
+        "il1pi1nm": "kaalm.com",
+        "il1pi1pr": "1225",
+        "il1pi1va": "Com",
+        "il1pi1br": "Invented",
+        "il1pi1qt": 1,
+        "il1pi1ps": 1,
+        "il1pi1ca": "industries/organization-company-names"
+      }
     }
   };
 
